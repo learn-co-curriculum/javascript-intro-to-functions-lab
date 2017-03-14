@@ -18,24 +18,10 @@ Even if you've walked through some of this material before, it's a good idea to 
 
 For now, open up `index.js` in your text editor. You should see, well, nothing. We'll fix that soon.
 
-Now open up `test/index-test.js`. Hey, there's something! What's all of this stuff doing?
-
-At the very top of the file, you'll see
+Now open up `test/index-test.js`. Hey, there's something! What's all of this stuff doing? You should see:
 
 ``` javascript
-global.expect = require('expect');
-
-const babel = require('babel-core');
-const jsdom = require('jsdom');
-const path = require('path');
-```
-
-This might be a bit bewildering, but all we're doing is referencing different _libraries_ that help us run your tests. A library is code that someone else (usually multiple someone elses) wrote for our use. Note that `require` won't work out of the box in the browser. We're actually running our tests in a different _environment_. (Remember the sandbox analogy from earlier? It's just like that.)
-
-If you go to `test/index-test.js`, you'll see
-
-``` javascript
-describe('shout(string)', () => {
+describe('shout(string)', function(){
   // there's stuff in here, too
 })
 ```
@@ -45,7 +31,7 @@ describe('shout(string)', () => {
 Let's take a closer look at that `describe()`:
 
 ``` javascript
-describe('shout(string)', () => {
+describe('shout(string)', function(){
   it('receives one argument and returns it in all caps', () => {
     // we'll get to this in a sec
   })

@@ -64,7 +64,7 @@ which says that it _expects_ a call to `shout()` with the string `'hello'` will 
 
 ### Running the Tests
 
-To run the tests, run `learn test` in the terminal in your Learn IDE. The first output you'll see will look like
+To run the tests, run `learn` in the terminal in your Learn IDE. The first output you'll see will look like
 
 ![test fail](https://s3.amazonaws.com/learn-verified/javascript-intro-to-functions-lab-0-tests-passing.png)
 

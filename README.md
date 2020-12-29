@@ -285,7 +285,7 @@ whisper or they shout. The next test is similar to the first:
 ```
 
 This test is telling us that `whisper(string)` receives one argument and returns
-it in all lowercase. At the moment, the test is failing becasue whisper is not
+it in all lowercase. At the moment, the test is failing because whisper is not
 defined.
 
 > **Note:** Just like `.toUpperCase()` changes any string to all uppercase in
